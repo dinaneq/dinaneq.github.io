@@ -1,0 +1,31 @@
+name: Subscription Updater
+
+on:
+  push:
+    branches: [ "main" ]
+  schedule:
+    - cron: '*/90 * * * *'
+
+  #workflow_dispatch:
+jobs:
+  UpdateSub:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check The Code
+        uses: actions/checkout@v2
+      - name: Get Files
+        run: |
+          curl -o aktif.txt -LJO "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/actives.txt"
+          curl -o semua.txt -LJO "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/row-url/all.txt"
+          curl -o kumpulan-p1.txt -LJO "https://raw.githubusercontent.com/LalatinaHub/Mineral/master/result/nodes"
+          curl -o kumpulan-p2.txt -LJO "https://raw.githubusercontent.com/hkpc/V2ray-Configs/main/Splitted-By-Protocol/vmess.txt"
+          curl -o kumpulan-p3.txt -LJO "https://github.com/Surfboardv2ray/TGParse/raw/main/configtg.txt"
+          
+      - name: Push And Update Files
+        run: |
+          git config --global user.name "geedoor"
+          git config --global user.email "kuyshare@gmx.com"
+          git add .
+          git commit -m "Diperbarui pada - $(TZ='Asia/Jakarta' date '+%Y-%m-%d %H:%M:%S') WIB"
+          git push
