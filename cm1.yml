@@ -1,0 +1,971 @@
+port: 7890
+allow-lan: false
+mode: rule
+external-controller: 127.0.0.1:9090
+dns:
+  enabled: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://223.5.5.5/dns-query
+  - https://doh.360.cn/dns-query
+  - https://dns.alidns.com/dns-query
+  - 119.29.29.29
+  fallback:
+  - 8.8.8.8
+  - 8.8.4.4
+  - tls://1.0.0.1:853
+  - tls://dns.google:853
+proxies:
+  - {name: AE_81653_0001, server: 94.140.0.0, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: AE_81653_0002, server: 94.140.0.0, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: AE_81653_0003, server: 94.140.0.0, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: AE_81653_0004, server: 94.140.0.0, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: AU_81653_0005, server: 103.169.142.121, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2securityfp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: AU_81653_0006, server: 103.169.142.121, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: AU_81653_0007, server: 103.169.142.78, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: /tg@zdyz2fp=chromefp=chromefp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: AU_81653_0008, server: 103.169.142.38, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: BG_81653_0009, server: 147.78.140.5, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: BG_81653_0010, server: 147.78.140.5, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, network: ws, tls: true, client-fingerprint: chrome, servername: juzibaipiao.5112233.xyz, ws-opts: {path: /security, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: CN_81653_0011, server: 183.236.48.163, port: 54882, type: vmess, alterId: 64, cipher: auto, network: tcp, skip-cert-verify: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+  - {name: CN_81653_0012, server: 113.226.148.65, port: 7890, type: http, client-fingerprint: chrome, skip-cert-verify: true, tls: false, udp: true}
+  - {name: CN_81653_0013, server: 120.232.153.40, port: 52442, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+  - {name: CN_81653_0014, server: 103.255.208.216, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: DE_81653_0015, server: 140.99.233.156, port: 2087, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: DE_81653_0016, server: 45.80.111.38, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: DE_81653_0017, server: 188.244.122.58, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, network: ws, tls: true, client-fingerprint: chrome, servername: juzibaipiao.5112233.xyz, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: EE_81653_0018, server: 45.80.110.173, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0019, server: 45.80.110.173, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0020, server: 45.80.110.173, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0021, server: 45.80.110.173, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0022, server: 45.80.110.231, port: 80, type: vless, network: ws, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: a.ssll.gay, udp: true, ws-opts: {headers: {Host: a.ssll.gay}, path: Twitterfreecodes}}
+  - {name: EE_81653_0023, server: 45.80.110.231, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0024, server: 45.80.110.201, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0025, server: 45.80.110.201, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0026, server: 45.80.110.201, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0027, server: 45.80.110.201, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0028, server: 45.80.110.175, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0029, server: 45.80.110.13, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0030, server: 45.80.110.175, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0031, server: 45.80.110.161, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0032, server: 45.80.110.209, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0033, server: 45.80.110.245, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0034, server: 45.80.110.209, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0035, server: 45.80.110.41, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0036, server: 45.80.110.130, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0037, server: 45.80.110.130, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0038, server: 45.80.110.230, port: 2087, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodesfp=chromefp=chromefp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0039, server: 45.80.110.230, port: 2087, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodesfp=chromefp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0040, server: 45.80.110.2, port: 8443, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitter懈袥袩械∞袩卸携†fp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0041, server: 45.80.110.5, port: 2083, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, network: ws, tls: true, client-fingerprint: chrome, servername: a.ssll.gay, ws-opts: {path: /, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0042, server: 45.80.110.203, port: 8443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0043, server: 45.80.110.230, port: 2087, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodesfp=chromefp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0044, server: 45.80.110.133, port: 2087, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodesfp=chromefp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0045, server: 45.80.110.133, port: 2087, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodesfp=chromefp=chromefp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0046, server: 45.80.110.252, port: 2087, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, network: ws, tls: true, client-fingerprint: chrome, servername: a.ssll.gay, ws-opts: {path: /, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0047, server: 45.80.110.161, port: 2083, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodesfp=chromefp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0048, server: 45.80.110.241, port: 2087, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, network: ws, tls: true, client-fingerprint: chrome, servername: a.ssll.gay, ws-opts: {path: twitterfreecodessecurity, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0049, server: 45.80.110.13, port: 8443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, network: ws, tls: true, client-fingerprint: chrome, servername: a.ssll.gay, ws-opts: {path: twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0050, server: 45.80.110.200, port: 2053, type: vless, network: ws, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: a.ssll.gay, tls: true, ws-opts: {headers: {Host: a.ssll.gay}, path: Twitterfreecodes}}
+  - {name: EE_81653_0051, server: 45.80.110.212, port: 8443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0052, server: 45.80.110.130, port: 2087, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, network: ws, tls: true, client-fingerprint: chrome, servername: a.ssll.gay, ws-opts: {path: twitterfreecodessecurity, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0053, server: 45.80.110.215, port: 2087, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: twitterfreecodesfp=chromefp=chromefp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: EE_81653_0054, server: 45.80.110.223, port: 2053, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodes, headers: {Host: a.ssll.gay}}}
+  - {name: GB_81653_0055, server: 94.247.142.245, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_81653_0056, server: 31.22.116.186, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: GB_81653_0057, server: 31.22.116.198, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: GB_81653_0058, server: 94.247.142.241, port: 443, type: vless, uuid: 775213ac-3976-439a-8977-3277c0e4735d, network: ws, tls: true, client-fingerprint: chrome, servername: fq521.6789.cloudns.be, ws-opts: {path: twitterfreecodessecurity, headers: {Host: fq521.6789.cloudns.be}}}
+  - {name: GB_81653_0059, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_81653_0060, server: 94.247.142.245, port: 2096, type: vless, client-fingerprint: chrome, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_81653_0061, server: 94.247.142.245, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: GB_81653_0062, server: 217.163.76.107, port: 2053, type: vless, uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365, network: ws, tls: true, client-fingerprint: chrome, servername: mositr.freenods.sbs, ws-opts: {path: twitterfreecodes, headers: {Host: mositr.freenods.sbs}}}
+  - {name: GB_81653_0063, server: 31.22.116.155, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: HK_81653_0064, server: 119.28.189.227, port: 32079, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: HK_81653_0065, server: 58.176.95.46, port: 443, type: vless, network: ws, uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5, servername: dns68.putata.eu.org, tls: true, client-fingerprint: randomized, ws-opts: {headers: {Host: dns68.putata.eu.org}, path: "/?ed=2048"}}
+  - {name: HK_81653_0066, server: 183.178.22.246, port: 11417, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: HK_81653_0067, server: 119.247.186.144, port: 28717, type: vless, network: ws, uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5, servername: dns68.putata.eu.org, tls: true, client-fingerprint: randomized, packet-encoding: "", ws-opts: {headers: {Host: dns68.putata.eu.org}, path: "/?ed=2048"}}
+  - {name: HK_81653_0068, server: 185.155.235.146, port: 17771, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0069, server: 124.80.75.68, port: 26658, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0070, server: 124.80.75.68, port: 39658, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0071, server: 124.199.44.146, port: 10419, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0072, server: 124.199.44.146, port: 30005, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0073, server: 124.80.75.68, port: 12654, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0074, server: 124.199.44.146, port: 30064, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0075, server: 124.80.20.114, port: 30059, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0076, server: 117.123.72.132, port: 21979, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0077, server: 124.80.75.68, port: 15772, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0078, server: 117.123.72.132, port: 24016, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0079, server: 124.199.44.146, port: 30013, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0080, server: 124.80.20.114, port: 25177, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0081, server: 124.80.75.68, port: 25346, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0082, server: 124.199.44.146, port: 35018, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0083, server: 124.199.33.104, port: 22672, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0084, server: 124.80.75.68, port: 35810, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0085, server: 117.123.72.132, port: 19374, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KR_81653_0086, server: 119.207.86.66, port: 12209, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: KZ_81653_0087, server: 31.43.179.84, port: 2083, type: vless, uuid: 9af577f2-0a7a-4448-ae0b-6985c53ea634, network: ws, tls: true, client-fingerprint: chrome, servername: t-netplus1.pages.dev, ws-opts: {path: "/?ed", headers: {Host: t-netplus1.pages.dev}}}
+  - {name: KZ_81653_0088, server: 185.176.26.128, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, network: ws, tls: true, client-fingerprint: chrome, servername: b458aB02.caa-CHaneL-Worker-Page-FReE-jHUIhnUjhPHjkl-NihGKjN.PAGES.Dev, ws-opts: {path: /, headers: {Host: b458aB02.caa-CHaneL-Worker-Page-FReE-jHUIhnUjhPHjkl-NihGKjN.PAGES.Dev}}}
+  - {name: KZ_81653_0089, server: 31.43.179.42, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: LU_81653_0090, server: 188.42.89.182, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: LU_81653_0091, server: 188.42.88.130, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_81653_0092, server: 185.176.24.140, port: 2087, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_81653_0093, server: 188.42.145.159, port: 2096, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: RU_81653_0094, server: 188.42.145.159, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_81653_0095, server: 188.42.145.159, port: 2096, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_81653_0096, server: 188.42.145.178, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_81653_0097, server: 188.42.145.178, port: 443, type: vless, client-fingerprint: chrome, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: false, servername: cfed.tgzdyz2.top, network: ws, ws-opts: {path: tg@zdyz2fp=chrome, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_81653_0098, server: 185.59.218.158, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_81653_0099, server: 188.42.145.159, port: 443, type: vless, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, network: ws, tls: true, client-fingerprint: chrome, servername: VIrgiNiavPn-nL.pagEs.dEv, ws-opts: {path: /, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}}
+  - {name: RU_81653_0100, server: 188.42.145.159, port: 8443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_81653_0101, server: 188.42.145.90, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_81653_0102, server: 188.42.145.90, port: 8443, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, client-fingerprint: chrome, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed"}}
+  - {name: RU_81653_0103, server: 185.59.218.139, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: RU_81653_0104, server: 188.42.145.90, port: 8443, type: vless, client-fingerprint: chrome, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?edfp=chromefp=chrome", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: RU_81653_0105, server: 188.42.145.140, port: 443, type: vless, network: ws, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, servername: g1.youyuan.us.kg, tls: true, client-fingerprint: chrome, packet-encoding: "", ws-opts: {headers: {Host: g1.youyuan.us.kg}, path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome"}}
+  - {name: RU_81653_0106, server: 188.42.145.140, port: 443, type: vless, client-fingerprint: chrome, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, tls: true, tfo: false, skip-cert-verify: false, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome", headers: {Host: g1.youyuan.us.kg}}}
+  - {name: TW_81653_0107, server: 1.34.89.47, port: 13749, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: TW_81653_0108, server: 60.248.63.88, port: 12832, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: TW_81653_0109, server: 123.241.137.138, port: 12071, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0456, server: 34.36.183.121, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0457, server: 34.160.118.77, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0458, server: 47.251.54.234, port: 8443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0459, server: 69.84.182.102, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0460, server: 141.11.148.196, port: 48301, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0461, server: 216.205.52.109, port: 2083, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: US_81653_0462, server: 216.116.134.43, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, udp: true, tls: true, skip-cert-verify: false, servername: juzibaipiao.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_81653_0463, server: 45.159.216.99, port: 80, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: Twitterfreecodesfp=chrome, headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0464, server: 45.159.216.99, port: 80, type: vless, network: ws, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, servername: a.ssll.gay, client-fingerprint: chrome, packet-encoding: "", ws-opts: {headers: {Host: a.ssll.gay}, path: Twitterfreecodesfp=chrome}}
+  - {name: US_81653_0465, server: 14.102.228.210, port: 2096, type: vless, network: ws, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, servername: juzibaipiao.5112233.xyz, skip-cert-verify: false, tls: true, udp: true, ws-opts: {headers: {Host: juzibaipiao.5112233.xyz}, path: "/?ed=2048"}}
+  - {name: US_81653_0466, server: cdn.idouyin.tk, port: 8443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0467, server: 198.62.62.4, port: 443, type: vless, uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: false, servername: page-us-qg0.pages.dev, network: ws, ws-opts: {path: twitterfreecodes, headers: {Host: page-us-qg0.pages.dev}}}
+  - {name: US_81653_0468, server: 155.46.213.37, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0469, server: 155.46.213.32, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0470, server: 43.153.80.208, port: 443, type: trojan, password: CMLiu, sni: aliorg.filegear-sg.me, network: ws, ws-opts: {path: /, headers: {Host: aliorg.filegear-sg.me}}, skip-cert-verify: true, udp: true}
+  - {name: US_81653_0471, server: 45.159.218.76, port: 443, type: vless, uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119, network: ws, tls: true, client-fingerprint: chrome, servername: mmdv2.pages.dev, ws-opts: {path: "/?ed", headers: {Host: mmdv2.pages.dev}}}
+  - {name: US_81653_0472, server: 198.62.62.4, port: 443, type: vless, client-fingerprint: chrome, uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c, tls: true, tfo: false, skip-cert-verify: false, servername: page-us-qg0.pages.dev, network: ws, ws-opts: {path: twitterfreecodesfp=chrome, headers: {Host: page-us-qg0.pages.dev}}}
+  - {name: US_81653_0473, server: 43.153.80.208, port: 443, type: trojan, password: CMLiu, sni: aliorg.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aliorg.filegear-sg.me}}, skip-cert-verify: true, udp: false}
+  - {name: US_81653_0474, server: 155.46.213.9, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: /tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0475, server: 216.116.134.43, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, network: ws, tls: true, client-fingerprint: chrome, servername: juzibaipiao.5112233.xyz, ws-opts: {path: "/?ed", headers: {Host: juzibaipiao.5112233.xyz}}}
+  - {name: US_81653_0476, server: 147.185.161.35, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0477, server: 89.116.161.139, port: 2083, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0478, server: 43.153.80.208, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, udp: true, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: /}}
+  - {name: US_81653_0479, server: 66.81.247.244, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0480, server: 63.141.128.97, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0481, server: 43.153.103.203, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0482, server: 130.250.137.70, port: 2096, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, udp: true, tls: true, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0483, server: 167.68.11.106, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0484, server: 167.68.11.191, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2security, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0485, server: 66.81.247.19, port: 2083, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, network: ws, tls: true, client-fingerprint: chrome, servername: a.ssll.gay, ws-opts: {path: twitter苏小柠security, headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0486, server: 170.114.46.140, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0487, server: 43.153.80.208, port: 443, type: trojan, client-fingerprint: chrome, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: "/?ed=2048"}}
+  - {name: US_81653_0488, server: 69.84.182.102, port: 443, type: vless, client-fingerprint: chrome, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: a.ssll.gay, network: ws, ws-opts: {path: "/?ed=2048fp=chrome", headers: {Host: a.ssll.gay}}}
+  - {name: US_81653_0489, server: fbi.gov, port: 2053, type: vless, uuid: e1913fbb-cc33-4e13-bb2b-db35b60e6a53, network: ws, tls: true, client-fingerprint: firefox, servername: COde911comEtoIrAnNsOdSnefHHDKaLcOSHD.PAGES.dEV, ws-opts: {path: "/?ed=0", headers: {Host: COde911comEtoIrAnNsOdSnefHHDKaLcOSHD.PAGES.dEV}}}
+  - {name: US_81653_0490, server: 167.68.11.95, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0491, server: 216.116.134.16, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, network: ws, tls: true, client-fingerprint: chrome, servername: cfed.tgzdyz2.top, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}}
+  - {name: US_81653_0492, server: 43.153.80.208, port: 443, type: trojan, client-fingerprint: chrome, password: CMLiu, sni: aliorg.filegear-sg.me, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aliorg.filegear-sg.me}}}
+  - {name: US_81653_0493, server: t-netplus-4vx.pages.dev, port: 443, type: vless, network: ws, uuid: 00d7256f-6ef2-42ee-8319-d4a49536b918, servername: vpn-aryoo-bo4.pages.dev, tls: true, client-fingerprint: chrome, packet-encoding: "", ws-opts: {headers: {Host: vpn-aryoo-bo4.pages.dev}, path: "/?ed=2560"}}
+  - {name: US_81653_0494, server: 43.153.80.208, port: 443, type: trojan, network: ws, password: CMLiu, skip-cert-verify: true, sni: aliorg.filegear-sg.me, udp: false, ws-opts: {headers: {Host: aliorg.filegear-sg.me}, path: "/?ed=2048"}}
+proxy-groups:
+- name: ⭕ proxinode
+  type: select
+  proxies:
+  - ♻️ automatic
+  - AE_81653_0001
+  - AE_81653_0002
+  - AE_81653_0003
+  - AE_81653_0004
+  - AU_81653_0005
+  - AU_81653_0006
+  - AU_81653_0007
+  - AU_81653_0008
+  - BG_81653_0009
+  - BG_81653_0010
+  - CN_81653_0011
+  - CN_81653_0012
+  - CN_81653_0013
+  - CN_81653_0014
+  - DE_81653_0015
+  - DE_81653_0016
+  - DE_81653_0017
+  - EE_81653_0018
+  - EE_81653_0019
+  - EE_81653_0020
+  - EE_81653_0021
+  - EE_81653_0022
+  - EE_81653_0023
+  - EE_81653_0024
+  - EE_81653_0025
+  - EE_81653_0026
+  - EE_81653_0027
+  - EE_81653_0028
+  - EE_81653_0029
+  - EE_81653_0030
+  - EE_81653_0031
+  - EE_81653_0032
+  - EE_81653_0033
+  - EE_81653_0034
+  - EE_81653_0035
+  - EE_81653_0036
+  - EE_81653_0037
+  - EE_81653_0038
+  - EE_81653_0039
+  - EE_81653_0040
+  - EE_81653_0041
+  - EE_81653_0042
+  - EE_81653_0043
+  - EE_81653_0044
+  - EE_81653_0045
+  - EE_81653_0046
+  - EE_81653_0047
+  - EE_81653_0048
+  - EE_81653_0049
+  - EE_81653_0050
+  - EE_81653_0051
+  - EE_81653_0052
+  - EE_81653_0053
+  - EE_81653_0054
+  - GB_81653_0055
+  - GB_81653_0056
+  - GB_81653_0057
+  - GB_81653_0058
+  - GB_81653_0059
+  - GB_81653_0060
+  - GB_81653_0061
+  - GB_81653_0062
+  - GB_81653_0063
+  - HK_81653_0064
+  - HK_81653_0065
+  - HK_81653_0066
+  - HK_81653_0067
+  - HK_81653_0068
+  - KR_81653_0069
+  - KR_81653_0070
+  - KR_81653_0071
+  - KR_81653_0072
+  - KR_81653_0073
+  - KR_81653_0074
+  - KR_81653_0075
+  - KR_81653_0076
+  - KR_81653_0077
+  - KR_81653_0078
+  - KR_81653_0079
+  - KR_81653_0080
+  - KR_81653_0081
+  - KR_81653_0082
+  - KR_81653_0083
+  - KR_81653_0084
+  - KR_81653_0085
+  - KR_81653_0086
+  - KZ_81653_0087
+  - KZ_81653_0088
+  - KZ_81653_0089
+  - LU_81653_0090
+  - LU_81653_0091
+  - RU_81653_0092
+  - RU_81653_0093
+  - RU_81653_0094
+  - RU_81653_0095
+  - RU_81653_0096
+  - RU_81653_0097
+  - RU_81653_0098
+  - RU_81653_0099
+  - RU_81653_0100
+  - RU_81653_0101
+  - RU_81653_0102
+  - RU_81653_0103
+  - RU_81653_0104
+  - RU_81653_0105
+  - RU_81653_0106
+  - TW_81653_0107
+  - TW_81653_0108
+  - TW_81653_0109
+  - US_81653_0456
+  - US_81653_0457
+  - US_81653_0458
+  - US_81653_0459
+  - US_81653_0460
+  - US_81653_0461
+  - US_81653_0462
+  - US_81653_0463
+  - US_81653_0464
+  - US_81653_0465
+  - US_81653_0466
+  - US_81653_0467
+  - US_81653_0468
+  - US_81653_0469
+  - US_81653_0470
+  - US_81653_0471
+  - US_81653_0472
+  - US_81653_0473
+  - US_81653_0474
+  - US_81653_0475
+  - US_81653_0476
+  - US_81653_0477
+  - US_81653_0478
+  - US_81653_0479
+  - US_81653_0480
+  - US_81653_0481
+  - US_81653_0482
+  - US_81653_0483
+  - US_81653_0484
+  - US_81653_0485
+  - US_81653_0486
+  - US_81653_0487
+  - US_81653_0488
+  - US_81653_0489
+  - US_81653_0490
+  - US_81653_0491
+  - US_81653_0492
+  - US_81653_0493
+  - US_81653_0494
+- name: ♻️ automatic
+  type: url-test
+  proxies:
+  - AE_81653_0001
+  - AE_81653_0002
+  - AE_81653_0003
+  - AE_81653_0004
+  - AU_81653_0005
+  - AU_81653_0006
+  - AU_81653_0007
+  - AU_81653_0008
+  - BG_81653_0009
+  - BG_81653_0010
+  - CN_81653_0011
+  - CN_81653_0012
+  - CN_81653_0013
+  - CN_81653_0014
+  - DE_81653_0015
+  - DE_81653_0016
+  - DE_81653_0017
+  - EE_81653_0018
+  - EE_81653_0019
+  - EE_81653_0020
+  - EE_81653_0021
+  - EE_81653_0022
+  - EE_81653_0023
+  - EE_81653_0024
+  - EE_81653_0025
+  - EE_81653_0026
+  - EE_81653_0027
+  - EE_81653_0028
+  - EE_81653_0029
+  - EE_81653_0030
+  - EE_81653_0031
+  - EE_81653_0032
+  - EE_81653_0033
+  - EE_81653_0034
+  - EE_81653_0035
+  - EE_81653_0036
+  - EE_81653_0037
+  - EE_81653_0038
+  - EE_81653_0039
+  - EE_81653_0040
+  - EE_81653_0041
+  - EE_81653_0042
+  - EE_81653_0043
+  - EE_81653_0044
+  - EE_81653_0045
+  - EE_81653_0046
+  - EE_81653_0047
+  - EE_81653_0048
+  - EE_81653_0049
+  - EE_81653_0050
+  - EE_81653_0051
+  - EE_81653_0052
+  - EE_81653_0053
+  - EE_81653_0054
+  - GB_81653_0055
+  - GB_81653_0056
+  - GB_81653_0057
+  - GB_81653_0058
+  - GB_81653_0059
+  - GB_81653_0060
+  - GB_81653_0061
+  - GB_81653_0062
+  - GB_81653_0063
+  - HK_81653_0064
+  - HK_81653_0065
+  - HK_81653_0066
+  - HK_81653_0067
+  - HK_81653_0068
+  - KR_81653_0069
+  - KR_81653_0070
+  - KR_81653_0071
+  - KR_81653_0072
+  - KR_81653_0073
+  - KR_81653_0074
+  - KR_81653_0075
+  - KR_81653_0076
+  - KR_81653_0077
+  - KR_81653_0078
+  - KR_81653_0079
+  - KR_81653_0080
+  - KR_81653_0081
+  - KR_81653_0082
+  - KR_81653_0083
+  - KR_81653_0084
+  - KR_81653_0085
+  - KR_81653_0086
+  - KZ_81653_0087
+  - KZ_81653_0088
+  - KZ_81653_0089
+  - LU_81653_0090
+  - LU_81653_0091
+  - RU_81653_0092
+  - RU_81653_0093
+  - RU_81653_0094
+  - RU_81653_0095
+  - RU_81653_0096
+  - RU_81653_0097
+  - RU_81653_0098
+  - RU_81653_0099
+  - RU_81653_0100
+  - RU_81653_0101
+  - RU_81653_0102
+  - RU_81653_0103
+  - RU_81653_0104
+  - RU_81653_0105
+  - RU_81653_0106
+  - TW_81653_0107
+  - TW_81653_0108
+  - TW_81653_0109
+  - US_81653_0456
+  - US_81653_0457
+  - US_81653_0458
+  - US_81653_0459
+  - US_81653_0460
+  - US_81653_0461
+  - US_81653_0462
+  - US_81653_0463
+  - US_81653_0464
+  - US_81653_0465
+  - US_81653_0466
+  - US_81653_0467
+  - US_81653_0468
+  - US_81653_0469
+  - US_81653_0470
+  - US_81653_0471
+  - US_81653_0472
+  - US_81653_0473
+  - US_81653_0474
+  - US_81653_0475
+  - US_81653_0476
+  - US_81653_0477
+  - US_81653_0478
+  - US_81653_0479
+  - US_81653_0480
+  - US_81653_0481
+  - US_81653_0482
+  - US_81653_0483
+  - US_81653_0484
+  - US_81653_0485
+  - US_81653_0486
+  - US_81653_0487
+  - US_81653_0488
+  - US_81653_0489
+  - US_81653_0490
+  - US_81653_0491
+  - US_81653_0492
+  - US_81653_0493
+  - US_81653_0494
+  url: https://www.google.com/favicon.ico
+  interval: 300
+rules:
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,⭕ proxinode
+- DOMAIN-SUFFIX,digicert.com,⭕ proxinode
+- DOMAIN,ocsp.apple.com,⭕ proxinode
+- DOMAIN,ocsp.comodoca.com,⭕ proxinode
+- DOMAIN,ocsp.usertrust.com,⭕ proxinode
+- DOMAIN,ocsp.sectigo.com,⭕ proxinode
+- DOMAIN,ocsp.verisign.net,⭕ proxinode
+- DOMAIN-SUFFIX,apple-dns.net,⭕ proxinode
+- DOMAIN,testflight.apple.com,⭕ proxinode
+- DOMAIN,sandbox.itunes.apple.com,⭕ proxinode
+- DOMAIN,itunes.apple.com,⭕ proxinode
+- DOMAIN-SUFFIX,apps.apple.com,⭕ proxinode
+- DOMAIN-SUFFIX,blobstore.apple.com,⭕ proxinode
+- DOMAIN,cvws.icloud-content.com,⭕ proxinode
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,⭕ proxinode
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,⭕ proxinode
+- DOMAIN-KEYWORD,google,⭕ proxinode
+- DOMAIN-KEYWORD,gmail,⭕ proxinode
+- DOMAIN-KEYWORD,youtube,⭕ proxinode
+- DOMAIN-KEYWORD,facebook,⭕ proxinode
+- DOMAIN-SUFFIX,fb.me,⭕ proxinode
+- DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
+- DOMAIN-KEYWORD,twitter,⭕ proxinode
+- DOMAIN-KEYWORD,instagram,⭕ proxinode
+- DOMAIN-KEYWORD,dropbox,⭕ proxinode
+- DOMAIN-SUFFIX,twimg.com,⭕ proxinode
+- DOMAIN-KEYWORD,blogspot,⭕ proxinode
+- DOMAIN-SUFFIX,youtu.be,⭕ proxinode
+- DOMAIN-KEYWORD,whatsapp,⭕ proxinode
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,⭕ proxinode
+- DOMAIN-SUFFIX,abpchina.org,⭕ proxinode
+- DOMAIN-SUFFIX,adblockplus.org,⭕ proxinode
+- DOMAIN-SUFFIX,adobe.com,⭕ proxinode
+- DOMAIN-SUFFIX,akamaized.net,⭕ proxinode
+- DOMAIN-SUFFIX,alfredapp.com,⭕ proxinode
+- DOMAIN-SUFFIX,amplitude.com,⭕ proxinode
+- DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
+- DOMAIN-SUFFIX,android.com,⭕ proxinode
+- DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
+- DOMAIN-SUFFIX,aolcdn.com,⭕ proxinode
+- DOMAIN-SUFFIX,apkpure.com,⭕ proxinode
+- DOMAIN-SUFFIX,appledaily.com,⭕ proxinode
+- DOMAIN-SUFFIX,appshopper.com,⭕ proxinode
+- DOMAIN-SUFFIX,appspot.com,⭕ proxinode
+- DOMAIN-SUFFIX,arcgis.com,⭕ proxinode
+- DOMAIN-SUFFIX,archive.org,⭕ proxinode
+- DOMAIN-SUFFIX,armorgames.com,⭕ proxinode
+- DOMAIN-SUFFIX,aspnetcdn.com,⭕ proxinode
+- DOMAIN-SUFFIX,att.com,⭕ proxinode
+- DOMAIN-SUFFIX,awsstatic.com,⭕ proxinode
+- DOMAIN-SUFFIX,azureedge.net,⭕ proxinode
+- DOMAIN-SUFFIX,azurewebsites.net,⭕ proxinode
+- DOMAIN-SUFFIX,bing.com,⭕ proxinode
+- DOMAIN-SUFFIX,bintray.com,⭕ proxinode
+- DOMAIN-SUFFIX,bit.com,⭕ proxinode
+- DOMAIN-SUFFIX,bit.ly,⭕ proxinode
+- DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
+- DOMAIN-SUFFIX,bjango.com,⭕ proxinode
+- DOMAIN-SUFFIX,bkrtx.com,⭕ proxinode
+- DOMAIN-SUFFIX,blog.com,⭕ proxinode
+- DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
+- DOMAIN-SUFFIX,blogger.com,⭕ proxinode
+- DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
+- DOMAIN-SUFFIX,blogspot.com,⭕ proxinode
+- DOMAIN-SUFFIX,blogspot.hk,⭕ proxinode
+- DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
+- DOMAIN-SUFFIX,box.com,⭕ proxinode
+- DOMAIN-SUFFIX,box.net,⭕ proxinode
+- DOMAIN-SUFFIX,cachefly.net,⭕ proxinode
+- DOMAIN-SUFFIX,chromium.org,⭕ proxinode
+- DOMAIN-SUFFIX,cl.ly,⭕ proxinode
+- DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
+- DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
+- DOMAIN-SUFFIX,cloudmagic.com,⭕ proxinode
+- DOMAIN-SUFFIX,cmail19.com,⭕ proxinode
+- DOMAIN-SUFFIX,cnet.com,⭕ proxinode
+- DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
+- DOMAIN-SUFFIX,comodoca.com,⭕ proxinode
+- DOMAIN-SUFFIX,crashlytics.com,⭕ proxinode
+- DOMAIN-SUFFIX,culturedcode.com,⭕ proxinode
+- DOMAIN-SUFFIX,d.pr,⭕ proxinode
+- DOMAIN-SUFFIX,danilo.to,⭕ proxinode
+- DOMAIN-SUFFIX,dayone.me,⭕ proxinode
+- DOMAIN-SUFFIX,db.tt,⭕ proxinode
+- DOMAIN-SUFFIX,deskconnect.com,⭕ proxinode
+- DOMAIN-SUFFIX,disq.us,⭕ proxinode
+- DOMAIN-SUFFIX,disqus.com,⭕ proxinode
+- DOMAIN-SUFFIX,disquscdn.com,⭕ proxinode
+- DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
+- DOMAIN-SUFFIX,docker.com,⭕ proxinode
+- DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
+- DOMAIN-SUFFIX,droplr.com,⭕ proxinode
+- DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
+- DOMAIN-SUFFIX,dueapp.com,⭕ proxinode
+- DOMAIN-SUFFIX,dytt8.net,⭕ proxinode
+- DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
+- DOMAIN-SUFFIX,edgekey.net,⭕ proxinode
+- DOMAIN-SUFFIX,edgesuite.net,⭕ proxinode
+- DOMAIN-SUFFIX,engadget.com,⭕ proxinode
+- DOMAIN-SUFFIX,entrust.net,⭕ proxinode
+- DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
+- DOMAIN-SUFFIX,evernote.com,⭕ proxinode
+- DOMAIN-SUFFIX,fabric.io,⭕ proxinode
+- DOMAIN-SUFFIX,fast.com,⭕ proxinode
+- DOMAIN-SUFFIX,fastly.net,⭕ proxinode
+- DOMAIN-SUFFIX,fc2.com,⭕ proxinode
+- DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
+- DOMAIN-SUFFIX,feedly.com,⭕ proxinode
+- DOMAIN-SUFFIX,feedsportal.com,⭕ proxinode
+- DOMAIN-SUFFIX,fiftythree.com,⭕ proxinode
+- DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
+- DOMAIN-SUFFIX,flexibits.com,⭕ proxinode
+- DOMAIN-SUFFIX,flickr.com,⭕ proxinode
+- DOMAIN-SUFFIX,flipboard.com,⭕ proxinode
+- DOMAIN-SUFFIX,g.co,⭕ proxinode
+- DOMAIN-SUFFIX,gabia.net,⭕ proxinode
+- DOMAIN-SUFFIX,geni.us,⭕ proxinode
+- DOMAIN-SUFFIX,gfx.ms,⭕ proxinode
+- DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
+- DOMAIN-SUFFIX,ghostnoteapp.com,⭕ proxinode
+- DOMAIN-SUFFIX,git.io,⭕ proxinode
+- DOMAIN-KEYWORD,github,⭕ proxinode
+- DOMAIN-SUFFIX,globalsign.com,⭕ proxinode
+- DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
+- DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
+- DOMAIN-SUFFIX,golang.org,⭕ proxinode
+- DOMAIN-SUFFIX,gongm.in,⭕ proxinode
+- DOMAIN-SUFFIX,goo.gl,⭕ proxinode
+- DOMAIN-SUFFIX,goodreaders.com,⭕ proxinode
+- DOMAIN-SUFFIX,goodreads.com,⭕ proxinode
+- DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
+- DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
+- DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
+- DOMAIN-SUFFIX,hockeyapp.net,⭕ proxinode
+- DOMAIN-SUFFIX,hotmail.com,⭕ proxinode
+- DOMAIN-SUFFIX,icons8.com,⭕ proxinode
+- DOMAIN-SUFFIX,ifixit.com,⭕ proxinode
+- DOMAIN-SUFFIX,ift.tt,⭕ proxinode
+- DOMAIN-SUFFIX,ifttt.com,⭕ proxinode
+- DOMAIN-SUFFIX,iherb.com,⭕ proxinode
+- DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
+- DOMAIN-SUFFIX,img.ly,⭕ proxinode
+- DOMAIN-SUFFIX,imgur.com,⭕ proxinode
+- DOMAIN-SUFFIX,imore.com,⭕ proxinode
+- DOMAIN-SUFFIX,instapaper.com,⭕ proxinode
+- DOMAIN-SUFFIX,ipn.li,⭕ proxinode
+- DOMAIN-SUFFIX,is.gd,⭕ proxinode
+- DOMAIN-SUFFIX,issuu.com,⭕ proxinode
+- DOMAIN-SUFFIX,itgonglun.com,⭕ proxinode
+- DOMAIN-SUFFIX,itun.es,⭕ proxinode
+- DOMAIN-SUFFIX,ixquick.com,⭕ proxinode
+- DOMAIN-SUFFIX,j.mp,⭕ proxinode
+- DOMAIN-SUFFIX,js.revsci.net,⭕ proxinode
+- DOMAIN-SUFFIX,jshint.com,⭕ proxinode
+- DOMAIN-SUFFIX,jtvnw.net,⭕ proxinode
+- DOMAIN-SUFFIX,justgetflux.com,⭕ proxinode
+- DOMAIN-SUFFIX,kat.cr,⭕ proxinode
+- DOMAIN-SUFFIX,klip.me,⭕ proxinode
+- DOMAIN-SUFFIX,libsyn.com,⭕ proxinode
+- DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
+- DOMAIN-SUFFIX,linode.com,⭕ proxinode
+- DOMAIN-SUFFIX,lithium.com,⭕ proxinode
+- DOMAIN-SUFFIX,littlehj.com,⭕ proxinode
+- DOMAIN-SUFFIX,live.com,⭕ proxinode
+- DOMAIN-SUFFIX,live.net,⭕ proxinode
+- DOMAIN-SUFFIX,livefilestore.com,⭕ proxinode
+- DOMAIN-SUFFIX,llnwd.net,⭕ proxinode
+- DOMAIN-SUFFIX,macid.co,⭕ proxinode
+- DOMAIN-SUFFIX,macromedia.com,⭕ proxinode
+- DOMAIN-SUFFIX,macrumors.com,⭕ proxinode
+- DOMAIN-SUFFIX,mashable.com,⭕ proxinode
+- DOMAIN-SUFFIX,mathjax.org,⭕ proxinode
+- DOMAIN-SUFFIX,medium.com,⭕ proxinode
+- DOMAIN-SUFFIX,mega.co.nz,⭕ proxinode
+- DOMAIN-SUFFIX,mega.nz,⭕ proxinode
+- DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
+- DOMAIN-SUFFIX,microsofttranslator.com,⭕ proxinode
+- DOMAIN-SUFFIX,mindnode.com,⭕ proxinode
+- DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
+- DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
+- DOMAIN-SUFFIX,msedge.net,⭕ proxinode
+- DOMAIN-SUFFIX,myfontastic.com,⭕ proxinode
+- DOMAIN-SUFFIX,name.com,⭕ proxinode
+- DOMAIN-SUFFIX,nextmedia.com,⭕ proxinode
+- DOMAIN-SUFFIX,nsstatic.net,⭕ proxinode
+- DOMAIN-SUFFIX,nssurge.com,⭕ proxinode
+- DOMAIN-SUFFIX,nyt.com,⭕ proxinode
+- DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
+- DOMAIN-SUFFIX,omnigroup.com,⭕ proxinode
+- DOMAIN-SUFFIX,onedrive.com,⭕ proxinode
+- DOMAIN-SUFFIX,onenote.com,⭕ proxinode
+- DOMAIN-SUFFIX,ooyala.com,⭕ proxinode
+- DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
+- DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
+- DOMAIN-SUFFIX,orkut.com,⭕ proxinode
+- DOMAIN-SUFFIX,osxdaily.com,⭕ proxinode
+- DOMAIN-SUFFIX,outlook.com,⭕ proxinode
+- DOMAIN-SUFFIX,ow.ly,⭕ proxinode
+- DOMAIN-SUFFIX,paddleapi.com,⭕ proxinode
+- DOMAIN-SUFFIX,parallels.com,⭕ proxinode
+- DOMAIN-SUFFIX,parse.com,⭕ proxinode
+- DOMAIN-SUFFIX,pdfexpert.com,⭕ proxinode
+- DOMAIN-SUFFIX,periscope.tv,⭕ proxinode
+- DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
+- DOMAIN-SUFFIX,pinterest.com,⭕ proxinode
+- DOMAIN-SUFFIX,pixelmator.com,⭕ proxinode
+- DOMAIN-SUFFIX,pixiv.net,⭕ proxinode
+- DOMAIN-SUFFIX,playpcesor.com,⭕ proxinode
+- DOMAIN-SUFFIX,playstation.com,⭕ proxinode
+- DOMAIN-SUFFIX,playstation.com.hk,⭕ proxinode
+- DOMAIN-SUFFIX,playstation.net,⭕ proxinode
+- DOMAIN-SUFFIX,playstationnetwork.com,⭕ proxinode
+- DOMAIN-SUFFIX,pushwoosh.com,⭕ proxinode
+- DOMAIN-SUFFIX,rime.im,⭕ proxinode
+- DOMAIN-SUFFIX,servebom.com,⭕ proxinode
+- DOMAIN-SUFFIX,sfx.ms,⭕ proxinode
+- DOMAIN-SUFFIX,shadowsocks.org,⭕ proxinode
+- DOMAIN-SUFFIX,sharethis.com,⭕ proxinode
+- DOMAIN-SUFFIX,shazam.com,⭕ proxinode
+- DOMAIN-SUFFIX,skype.com,⭕ proxinode
+- DOMAIN-SUFFIX,smartdns⭕ proxinode.com,⭕ proxinode
+- DOMAIN-SUFFIX,smartmailcloud.com,⭕ proxinode
+- DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
+- DOMAIN-SUFFIX,sony.com,⭕ proxinode
+- DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
+- DOMAIN-SUFFIX,sourceforge.net,⭕ proxinode
+- DOMAIN-SUFFIX,spotify.com,⭕ proxinode
+- DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
+- DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
+- DOMAIN-SUFFIX,st.luluku.pw,⭕ proxinode
+- DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
+- DOMAIN-SUFFIX,startpage.com,⭕ proxinode
+- DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
+- DOMAIN-SUFFIX,steamcommunity.com,⭕ proxinode
+- DOMAIN-SUFFIX,symauth.com,⭕ proxinode
+- DOMAIN-SUFFIX,symcb.com,⭕ proxinode
+- DOMAIN-SUFFIX,symcd.com,⭕ proxinode
+- DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
+- DOMAIN-SUFFIX,tapbots.net,⭕ proxinode
+- DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
+- DOMAIN-SUFFIX,techcrunch.com,⭕ proxinode
+- DOMAIN-SUFFIX,techsmith.com,⭕ proxinode
+- DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
+- DOMAIN-SUFFIX,theverge.com,⭕ proxinode
+- DOMAIN-SUFFIX,time.com,⭕ proxinode
+- DOMAIN-SUFFIX,timeinc.net,⭕ proxinode
+- DOMAIN-SUFFIX,tiny.cc,⭕ proxinode
+- DOMAIN-SUFFIX,tinypic.com,⭕ proxinode
+- DOMAIN-SUFFIX,tmblr.co,⭕ proxinode
+- DOMAIN-SUFFIX,todoist.com,⭕ proxinode
+- DOMAIN-SUFFIX,trello.com,⭕ proxinode
+- DOMAIN-SUFFIX,trustasiassl.com,⭕ proxinode
+- DOMAIN-SUFFIX,tumblr.co,⭕ proxinode
+- DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
+- DOMAIN-SUFFIX,tweetdeck.com,⭕ proxinode
+- DOMAIN-SUFFIX,tweetmarker.net,⭕ proxinode
+- DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
+- DOMAIN-SUFFIX,txmblr.com,⭕ proxinode
+- DOMAIN-SUFFIX,typekit.net,⭕ proxinode
+- DOMAIN-SUFFIX,ubertags.com,⭕ proxinode
+- DOMAIN-SUFFIX,ublock.org,⭕ proxinode
+- DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
+- DOMAIN-SUFFIX,ulyssesapp.com,⭕ proxinode
+- DOMAIN-SUFFIX,urchin.com,⭕ proxinode
+- DOMAIN-SUFFIX,usertrust.com,⭕ proxinode
+- DOMAIN-SUFFIX,v.gd,⭕ proxinode
+- DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
+- DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
+- DOMAIN-SUFFIX,vimeocdn.com,⭕ proxinode
+- DOMAIN-SUFFIX,vine.co,⭕ proxinode
+- DOMAIN-SUFFIX,vivaldi.com,⭕ proxinode
+- DOMAIN-SUFFIX,vox-cdn.com,⭕ proxinode
+- DOMAIN-SUFFIX,vsco.co,⭕ proxinode
+- DOMAIN-SUFFIX,vultr.com,⭕ proxinode
+- DOMAIN-SUFFIX,w.org,⭕ proxinode
+- DOMAIN-SUFFIX,w3schools.com,⭕ proxinode
+- DOMAIN-SUFFIX,webtype.com,⭕ proxinode
+- DOMAIN-SUFFIX,wikiwand.com,⭕ proxinode
+- DOMAIN-SUFFIX,wikileaks.org,⭕ proxinode
+- DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
+- DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
+- DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
+- DOMAIN-SUFFIX,windows.com,⭕ proxinode
+- DOMAIN-SUFFIX,windows.net,⭕ proxinode
+- DOMAIN-SUFFIX,wire.com,⭕ proxinode
+- DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
+- DOMAIN-SUFFIX,workflowy.com,⭕ proxinode
+- DOMAIN-SUFFIX,wp.com,⭕ proxinode
+- DOMAIN-SUFFIX,wsj.com,⭕ proxinode
+- DOMAIN-SUFFIX,wsj.net,⭕ proxinode
+- DOMAIN-SUFFIX,xda-developers.com,⭕ proxinode
+- DOMAIN-SUFFIX,xeeno.com,⭕ proxinode
+- DOMAIN-SUFFIX,xiti.com,⭕ proxinode
+- DOMAIN-SUFFIX,yahoo.com,⭕ proxinode
+- DOMAIN-SUFFIX,yimg.com,⭕ proxinode
+- DOMAIN-SUFFIX,ying.com,⭕ proxinode
+- DOMAIN-SUFFIX,yoyo.org,⭕ proxinode
+- DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
+- DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
+- DOMAIN-SUFFIX,telegram.org,⭕ proxinode
+- IP-CIDR,91.108.4.0/22,⭕ proxinode
+- IP-CIDR,91.108.8.0/21,⭕ proxinode
+- IP-CIDR,91.108.16.0/22,⭕ proxinode
+- IP-CIDR,91.108.56.0/22,⭕ proxinode
+- IP-CIDR,149.154.160.0/20,⭕ proxinode
+- IP-CIDR6,2001:67c:4e8::/48,⭕ proxinode
+- IP-CIDR6,2001:b28:f23d::/48,⭕ proxinode
+- IP-CIDR6,2001:b28:f23f::/48,⭕ proxinode
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- IP-CIDR,2002::/16,DIRECT
+- IP-CIDR,2001:db8::/32,DIRECT
+- IP-CIDR,2001::/32,DIRECT
+- IP-CIDR,2001:20::/28,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,⭕ proxinode
