@@ -32,7 +32,13 @@ jobs:
           curl -o merge24.txt -LJO "https://github.com/9Knight9n/v2ray-aggregator/raw/main/merged_24h.txt"      
           curl -o singbox.json -LJO "https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/singbox.json"      
           curl -o nekobox.txt -LJO "https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt"
-          
+          curl -o sub-all -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/merged"
+          curl -o sub-reality -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/reality"
+          curl -o sub-ss -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/shadowsocks"
+          curl -o sub-trojan -LJO https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/trojan"
+          curl -o sub-vless -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vless"
+          curl -o sub-vmess -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vmess"
+
       - name: Push And Update Files
         run: |
           git config --global user.name "geedoor"
