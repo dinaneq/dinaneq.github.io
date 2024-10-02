@@ -1,18 +1,33 @@
-import asyncio
-import telegram
+from telegram import Bot, InputMediaDocument
 
-TOKEN = "7260168327:AAEEOvNziECXLf29xfIU9rsr9JqIcmOFR_g"
-chat_id = '5161912359'
+BOT_TOKEN = "7260168327:AAEEOvNziECXLf29xfIU9rsr9JqIcmOFR_g"
+CHAT_ID = 5161912359
 
-bot = telegram.Bot(token=TOKEN)
-async def send_document(document, chat_id):
-    async with bot:
-        await bot.send_document(document=document, chat_id=chat_id)
 
-async def main():
-  
-    # Sending a document
-    await send_document(document=open('sub-all', 'rb'), chat_id=chat_id)
+def main():
+    bot = Bot(BOT_TOKEN)
+    file_paths = (
+        "sub-all",
+        "sub-vless",
+        "sub-vmess"
+    )
+    # From 2 to 10 items in one media group
+    # https://core.telegram.org/bots/api#sendmediagroup
+    media_group = list()
+    for f in file_paths:
+        with open(f, "rb") as fin:
+            # Up to 1024 characters.
+            # https://core.telegram.org/bots/api#inputmediadocument
+            caption = f"Total students in {f}: {len(fin.readlines())}\n"
+            # After the len(fin.readlines()) file's current position
+            # will be at the end of the file. seek(0) sets the position
+            # to the begining of the file so we can read it again during
+            # sending.
+            fin.seek(0)
+            media_group.append(InputMediaDocument(fin, caption=caption))
 
-if __name__ == '__main__':
-    asyncio.run(main())
+    bot.send_media_group(CHAT_ID, media=media_group)
+
+
+if __name__ == "__main__":
+    main()
