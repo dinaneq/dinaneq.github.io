@@ -22,6 +22,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install python-telegram-bot
+          wget https://raw.githubusercontent.com/dinaneq/dinaneq.github.io/refs/heads/main/sub-all
 
       - name: Run Python script
         run: |
