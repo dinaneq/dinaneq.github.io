@@ -8,6 +8,6 @@ def send_msg(text):
         bot.sendMessage(chat_id=chat_id, text=item)
 
 item = []
-with open("tgproxy.txt", 'r', encoding="utf-8") as file:
+with open("sub-vless", 'r', encoding="utf-8") as file:
   for item in file:
     send_msg(item)
