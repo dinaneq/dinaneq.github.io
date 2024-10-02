@@ -1,4 +1,4 @@
-name: Kirim
+name: Kirim666
 on:
   schedule:
     - cron: '0 */24 * * *'
