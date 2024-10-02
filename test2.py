@@ -10,4 +10,4 @@ def send_msg(text):
 item = []
 with open("tgproxy.txt", 'r', encoding="utf-8") as file:
 for item in file:
-     send_msg(item)
+  send_msg(item)
