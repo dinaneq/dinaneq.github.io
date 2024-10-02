@@ -9,16 +9,12 @@ current_time = datetime.datetime.now(pytz.timezone('Asia/Jakarta'))
 def main():
     bot = Bot(BOT_TOKEN)
     file_paths = (
-        "sub-all",
         "aktif.txt",
         "semua.txt",
         "kumpulan-p1.txt",
         "kumpulan-p2.txt",
         "kumpulan-p3.txt",
         "subapi",
-        "v2tel_link.txt",
-        "v2tel_links1.txt",
-        "v2tel_links2.txt",
         "cm1.yml",
         "cm2.yml",
         "cm3.yml",
