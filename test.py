@@ -1,7 +1,7 @@
 from telegram import Bot, InputMediaDocument
 
 BOT_TOKEN = "7260168327:AAEEOvNziECXLf29xfIU9rsr9JqIcmOFR_g"
-CHAT_ID = "-102249084770"
+CHAT_ID = -102249084770
 
 
 def main():
