@@ -7,7 +7,6 @@ def send_msg(text):
     for i in text:
         bot.sendMessage(chat_id=chat_id, text=item)
 
-item = []
 with open("sub-vless", 'r', encoding="utf-8") as file:
   for item in file:
     send_msg(item)
