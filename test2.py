@@ -9,4 +9,4 @@ def send_msg(text):
 
 with open("sub-vless", 'r', encoding="utf-8") as file:
   for item in file:
-    send_msg(item)
+    send_msg()
