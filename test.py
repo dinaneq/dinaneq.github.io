@@ -8,8 +8,12 @@ def main():
     bot = Bot(BOT_TOKEN)
     file_paths = (
         "sub-all",
+        "sub-reality",
+        "sub-ss",
+        "sub-trojan",
         "sub-vless",
-        "sub-vmess"
+        "sub-vmess",
+    
     )
     # From 2 to 10 items in one media group
     # https://core.telegram.org/bots/api#sendmediagroup
@@ -18,7 +22,7 @@ def main():
         with open(f, "rb") as fin:
             # Up to 1024 characters.
             # https://core.telegram.org/bots/api#inputmediadocument
-            caption = f"Daily Update for subapi: <code>https://api.vmess.free.nf/{f}</code> \n Total Accounts: {len(fin.readlines())}\n"
+            caption = f"Daily Update for subapi: \n\nhttps://api.vmess.free.nf/{f} \n\n Total Accounts: {len(fin.readlines())}\n"
             # After the len(fin.readlines()) file's current position
             # will be at the end of the file. seek(0) sets the position
             # to the begining of the file so we can read it again during
