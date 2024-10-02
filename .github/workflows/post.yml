@@ -30,6 +30,13 @@ jobs:
           sudo wget "https://github.com/2dust/v2rayNG/releases/download/1.8.39/v2rayNG_1.8.39_universal.apk"
           sudo wget "https://github.com/2dust/v2rayNG/releases/download/1.8.39/v2rayNG_1.8.39_x86.apk"
           sudo wget "https://github.com/2dust/v2rayNG/releases/download/1.8.39/v2rayNG_1.8.39_x86_64.apk"
+          sudo wget "https://github.com/lunoxxdev/nganuEdyirenkCintaJekiPolepel/releases/download/edy/GatchaNG_v1.8.3-19.514._UWU_UI_V16_arm64-v8a.apk"
+          sudo wget "https://github.com/lunoxxdev/nganuEdyirenkCintaJekiPolepel/releases/download/edy/GatchaNG_v1.8.3-19.514._UWU_UI_V16_armeabi-v7a.apk"
+          sudo wget "https://github.com/lunoxxdev/nganuEdyirenkCintaJekiPolepel/releases/download/edy/v2flyNG_v1.8.14.2000542._UWU_UI_arm64-v8a.apk"
+          sudo wget "https://github.com/lunoxxdev/nganuEdyirenkCintaJekiPolepel/releases/download/edy/v2flyNG_v1.8.14.2000542._UWU_UI_armeabi-v7a.apk"
+          sudo wget "https://github.com/lunoxxdev/nganuEdyirenkCintaJekiPolepel/releases/download/edy/v2rayNG_v1.8.25.2000562._UWU_UI_V2_arm64-v8a.apk"
+          sudo wget "https://github.com/lunoxxdev/nganuEdyirenkCintaJekiPolepel/releases/download/edy/v2rayNG_v1.8.25.2000562._UWU_UI_V2_armeabi-v7a.apk"
+          sudo wget "https://github.com/lunoxxdev/nganuEdyirenkCintaJekiPolepel/releases/download/edy/sing-box_1.9.3.apk"
           tree ./
 
       - name: Upload to Release
