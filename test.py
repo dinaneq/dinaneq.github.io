@@ -1,7 +1,7 @@
 from telegram import Bot, InputMediaDocument
 
 BOT_TOKEN = "7260168327:AAEEOvNziECXLf29xfIU9rsr9JqIcmOFR_g"
-CHAT_ID = 5161912359
+CHAT_ID = "-102249084770"
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
         with open(f, "rb") as fin:
             # Up to 1024 characters.
             # https://core.telegram.org/bots/api#inputmediadocument
-            caption = f"Daily Update for subapi: \n\nhttps://api.vmess.free.nf/{f} \n\n Total Accounts: {len(fin.readlines())}\n"
+            caption = f"Daily Update for subapi: \nhttps://api.vmess.free.nf/{f} \n\n Total Accounts: {len(fin.readlines())}"
             # After the len(fin.readlines()) file's current position
             # will be at the end of the file. seek(0) sets the position
             # to the begining of the file so we can read it again during
