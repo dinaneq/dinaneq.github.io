@@ -9,6 +9,6 @@ def send_msg(text):
 
 new_list = []
 with open("tgproxy.txt", 'r', encoding="utf-8") as file:
-     new_list = file.readline()
+     new_list = for item in file:
 for i in new_list:
      send_msg(i)
