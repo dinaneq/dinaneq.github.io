@@ -1,9 +1,10 @@
 from telegram import Bot, InputMediaDocument
 import datetime
+import pytz
 
 BOT_TOKEN = "7260168327:AAEEOvNziECXLf29xfIU9rsr9JqIcmOFR_g"
 CHAT_ID = -1002249084770
-current_time = datetime.datetime.now()
+current_time = datetime.datetime.now(pytz.timezone('Asia/Jakarta'))
 
 def main():
     bot = Bot(BOT_TOKEN)
