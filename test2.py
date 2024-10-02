@@ -8,7 +8,7 @@ def send_msg(text):
         bot.sendMessage(chat_id=chat_id, text=i)
 
 new_list = []
-with open("sub-vless", 'r', encoding="utf-8") as file:
+with open("tgproxy.txt", 'r', encoding="utf-8") as file:
      new_list = file.readline()
 for i in new_list:
      send_msg(i)
