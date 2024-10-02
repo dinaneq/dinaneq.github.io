@@ -9,9 +9,6 @@ current_time = datetime.datetime.now(pytz.timezone('Asia/Jakarta'))
 def main():
     bot = Bot(BOT_TOKEN)
     file_paths = (
-        "subapi",
-        "singbox.json",
-        "nekobox.txt",
         "sub-all",
         "sub-reality",
         "sub-ss",
