@@ -5,10 +5,9 @@ def send_msg(text):
     chat_id = "5161912359"
     bot = telegram.Bot(token=token)
     for i in text:
-        bot.sendMessage(chat_id=chat_id, text=i)
+        bot.sendMessage(chat_id=chat_id, text=item)
 
 item = []
 with open("tgproxy.txt", 'r', encoding="utf-8") as file:
-     for item in file:
-for i in item:
-     send_msg(i)
+for item in file:
+     send_msg(item)
