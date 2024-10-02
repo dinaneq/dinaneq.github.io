@@ -5,8 +5,11 @@ def send_msg(text):
     chat_id = "5161912359"
     bot = telegram.Bot(token=token)
     for i in text:
-        bot.sendMessage(chat_id=chat_id, text=item)
+        bot.sendMessage(chat_id=chat_id, text=line)
 
 with open("sub-vless", 'r') as file:
-  for item in file:
+  while True:
+    line = file.readline()
+    if not line:
+        break
     send_msg(item)
