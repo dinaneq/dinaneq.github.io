@@ -38,12 +38,12 @@ jobs:
           curl -o sub-trojan -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/trojan"
           curl -o sub-vless -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vless"
           curl -o sub-vmess -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vmess"
-          curl -o all_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/merged"
-          curl -o reality_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/reality"
-          curl -o ss_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/shadowsocks"
-          curl -o trojan_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/trojan"
-          curl -o vless_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vless"
-          curl -o vmess_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vmess"
+          curl -o sub-all_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/merged"
+          curl -o sub-reality_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/reality"
+          curl -o sub-ss_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/shadowsocks"
+          curl -o sub-trojan_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/trojan"
+          curl -o sub-vless_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vless"
+          curl -o sub-vmess_$(TZ='Asia/Jakarta' date '+%Y-%m-%d') -LJO "https://raw.githubusercontent.com/yebekhe/V2Hub/refs/heads/main/Split/Normal/vmess"
 
       - name: Push And Update Files
         run: |
