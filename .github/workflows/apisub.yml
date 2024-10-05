@@ -1,7 +1,7 @@
 name: Kirim ke ApiSub
 on:
   schedule:
-    - cron: '* */23 * * *'
+    - cron: '0 */23 * * *'
   workflow_dispatch:
 
 jobs:
