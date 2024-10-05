@@ -15,7 +15,8 @@ def main():
         "sub-trojan",
         "sub-vless",
         "sub-vmess",
-    
+        "semua.txt",
+        "aktif.txt",    
     )
     # From 2 to 10 items in one media group
     # https://core.telegram.org/bots/api#sendmediagroup
