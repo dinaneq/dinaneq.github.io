@@ -17,6 +17,7 @@ def main():
         "sub-vmess",
         "semua.txt",
         "aktif.txt",    
+        "vmess",    
     )
     # From 2 to 10 items in one media group
     # https://core.telegram.org/bots/api#sendmediagroup
