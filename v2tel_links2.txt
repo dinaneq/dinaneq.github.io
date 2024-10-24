@@ -1320,3 +1320,14 @@ ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ@23.157.40.113:8080#[🇺🇸]t.me/Co
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@64.74.163.130:990#[🇨🇦]t.me/ConfigsHub
 vmess://eyJhZGQiOiIxMDcuMTQ4LjIwNy4yNDkiLCJhaWQiOiI2NCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjQxODA0OGFmLWEyOTMtNGI5OS05YjBjLTk4Y2EzNTgwZGQyNCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNDg3MTIiLCJwcyI6Ilvwn4e68J+HuF10Lm1lL0NvbmZpZ3NIdWIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@69.50.95.203:8119#[🇺🇸]t.me/ConfigsHub
+vless://2df56fd0-d1b7-4793-b877-acd356d960f7@zula.ir:443?security=tls&sni=pages.dev&fp=chrome&type=ws&path=/?ed%3D8080&host=download-93w.pages.dev&encryption=none#[🇨🇦]t.me/ConfigsHub
+vless://2df56fd0-d1b7-4793-b877-acd356d960f7@iranserver.com:443?security=tls&sni=pages.dev&fp=chrome&type=ws&path=/?ed%3D8080&host=download-93w.pages.dev&encryption=none#[🇺🇸]t.me/ConfigsHub
+vless://2df56fd0-d1b7-4793-b877-acd356d960f7@172.66.44.56:443?security=tls&sni=pages.dev&fp=chrome&type=ws&path=/?ed%3D8080&host=download-93w.pages.dev&encryption=none#[🇨🇦]t.me/ConfigsHub
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@173.245.58.94:443?security=tls&sni=lv.kpcloud.eu.org&type=ws&path=%2F%3Fed%3D2048#[🇺🇸]t.me/ConfigsHub
+vless://48198295-b7ba-4b5c-8d85-085d55a6c869@173.245.59.50:443?security=tls&sni=av.ylks.xyz&type=ws&path=%2F%3Fed%3D2048#[🇨🇦]t.me/ConfigsHub
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@188.114.99.73:443?security=tls&sni=lv.kpcloud.eu.org&type=ws&path=%2F%3Fed%3D2048#[🇺🇸]t.me/ConfigsHub
+vless://48198295-b7ba-4b5c-8d85-085d55a6c869@198.41.208.45:443?security=tls&sni=av.ylks.xyz&type=ws&path=%2F%3Fed%3D2048#[🇨🇦]t.me/ConfigsHub
+vless://48198295-b7ba-4b5c-8d85-085d55a6c869@198.62.62.236:443?security=tls&sni=as.ylks.xyz&type=ws&path=%2Ffreecodes#[🇺🇸]t.me/ConfigsHub
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@173.245.49.164:443?security=tls&sni=lv.kpcloud.eu.org&type=ws&path=%2F%3Fed%3D2048#[🇺🇸]t.me/ConfigsHub
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@69.84.182.93:443?security=tls&sni=lv.ylks.us.kg&type=ws&path=%2F%3Fed%3D2560#[🇺🇸]t.me/ConfigsHub
+vless://a13df940-020c-465f-bc89-ee5279b5cd6a@198.41.192.145:443?security=tls&sni=lv.kpcloud.eu.org&type=ws&path=%2F%3Fed%3D2048#[🇨🇦]t.me/ConfigsHub
