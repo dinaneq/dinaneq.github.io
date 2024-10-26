@@ -11,7 +11,9 @@ today = today = date.today()
 def main():
     bot = Bot(BOT_TOKEN)
     file_paths = (
-        "vmess",
+        "semua.txt",
+        "aktif.txt",    
+        "vmess",    
     
     )
     # From 2 to 10 items in one media group
