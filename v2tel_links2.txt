@@ -492,3 +492,12 @@ vless://8a906d8c-d647-446a-ad40-ee63774fada6@159.223.250.98:443?path=%2FBARGOVPN
 vless://a94edb46-0734-4593-a8b5-9cd11ddc57f6@104.18.218.118:443?path=%2FTelegram-%40V2ray_Alpha%2F%3Fed%3D2560&security=tls&encryption=none&host=5c53ca21.vpn-aryoo.pages.dev&type=ws&sni=5c53ca21.vpn-aryoo.pages.dev#[🏁]t.me/ConfigsHub
 vless://8bcd0f06-c7f4-4548-b059-5410926ffac7@sus.sangeetc.com.np:443?hiddify=1&sni=sus.sangeetc.com.np&type=httpupgrade&alpn=h2&path=/HJfq8iYoObfnALnLyj4tYjj4a7&host=sus.sangeetc.com.np&encryption=none&fp=chrome&headerType=http&security=tls#[🏁]t.me/ConfigsHub
 vless://23c0367c-6da7-494b-90e7-697816be5a46@79.127.70.122:8080?security=none&encryption=none&host=doostihaa.com&headerType=http&type=tcp#[🏁]t.me/ConfigsHub
+vless://DIGIV2RAY@www.speedtest.net:2052?path=%2Ftm-Digiv2-__teldIGIv2__-DIGiv&security=none&encryption=none&host=www.speedtest.net.ftp.debian.org.www.digikala.com.cloudflare.com.farsr0id.ir.&type=ws#[🏁]t.me/ConfigsHub
+trojan://telegram-id-privatevpns@13.49.219.106:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#(S101)🇸🇪t.me/PrivateVPNs
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@13.48.179.82:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#Telegram @VlessConfig 🇸🇪
+vless://6285e567-0c25-4ce2-a2fa-80517c1345e1@sky.rethinkdns.com:2096?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=1223-9ux.pages.dev&fp=randomized&type=ws&sni=1223-9ux.pages.dev#[🏁]t.me/ConfigsHub
+trojan://telegram-id-directvpn@51.21.137.137:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#Our Channel : @DirectVPN
+vless://DIGIV2RAY@www.speedtest.net:2052?path=%2Ftm-Digiv2-__teldIGIv2__-DIGIV&security=none&encryption=none&host=www.warzesh3.com.ftp.debian.org.digikala.org.www.speedtest.net.cloudflare.com.par31games.ir.&type=httpupgrade#[🏁]t.me/ConfigsHub
+vless://a64f0cea-ca89-40e6-b316-b3badff1eb90@104.18.5.250:443?path=%2FBDwnEtVwG7BS0S9f%3Fed%3D2560&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=iSAA1.paGEs.DEV&fp=randomized&type=ws&sni=iSaa1.PAGeS.DeV#[🏁]t.me/ConfigsHub
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@api.namasha.co:443#[🏁]t.me/ConfigsHub
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@series-a2-me.varzesh360.co:443#[🏁]t.me/ConfigsHub
