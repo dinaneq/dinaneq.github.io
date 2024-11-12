@@ -1019,3 +1019,8 @@ trojan://telegram-id-privatevpns@51.44.154.194:22222?security=tls&alpn=http/1.1&
 trojan://NISHIKUITAN222@190.93.246.0:443?allowInsecure=1#[🏁]t.me/ConfigsHub
 trojan://NISHIKUITAN222@104.17.180.81:443?allowInsecure=1#[🏁]t.me/ConfigsHub
 vless://f2d1c531-2d24-421b-9f81-877902abcafe@104.18.15.19:443?security=tls&sni=CHaNNEl-Id-Eliv2RAy.pageS.dev&type=ws&host=channel-id-eliv2ray.pages.dev&path=%2F&fp=edge#[🏁]t.me/ConfigsHub
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.178:8080#[🏁]t.me/ConfigsHub
+vless://70186cf9-63e9-4a48-ba6f-52530a44c13d@185.29.222.172:36754?security=none&encryption=none&host=cafebazzar.ir%2Cfast.com&headerType=http&type=tcp#[🏁]t.me/ConfigsHub
+vless://f2dc17f5-3113-4a40-8c51-55fe0e2c7f75@104.25.182.54:443?path=%2F4ztBxup4VkbcJFlQ%3Fed%3D2560&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=PUrcOWFAst.pAGeS.dEv&fp=randomized&type=ws&sni=purCOwfaSt.PAgES.DEv#[🏁]t.me/ConfigsHub
+ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M%3D@23.166.88.198:3306#[🏁]t.me/ConfigsHub
+vless://1710320f-65bd-41e0-a23f-bc6af6076dbf@marzban.fastly2-443.hosting-ip.com:443?path=%2F%3Fed%3D80&security=tls&alpn=h2&encryption=none&host=srv641215.hstgr.com&fp=chrome&type=ws&sni=bwdraper.faculty.ucdavis.edu#[🏁]t.me/ConfigsHub
