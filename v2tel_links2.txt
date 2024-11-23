@@ -2536,3 +2536,11 @@ trojan://dTaXAtuoQF@185.143.235.200:443?security=tls&sni=nginx-4561f180e2-anssds
 vless://946f7a86-7c8b-4d77-ca35-7ff1718d2578@142.132.168.13:11770?security=none&type=tcp&host=divarcdn.com&headerType=http#👉🆔 @v2ray_configs_pool📡🇩🇪Germany
 trojan://dns68@104.21.92.73:443?allowInsecure=1&sni=trojan.putata.us.kg&ws=1&wspath=%2F#👉🆔 @v2ray_configs_pool📡🇨🇦Canada
 trojan://4b040268-f3a5-4136-b1a9-506012e8e3d9@141.101.120.10:443?allowInsecure=1&sni=ssp2.100896.xyz#👉🆔 @v2ray_configs_pool📡🇵🇱Poland
+vless://telegram-id-ArV2ray@151.101.194.133:443?encryption=none&security=tls&sni=mio.splashthat.com&alpn=h2%2Chttp%2F1.1&fp=chrome&type=ws&host=Shuow15.net&path=%2Ftelegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray%3Fed%3D2048#👉🆔 @v2ray_configs_pool📡🇺🇸United States
+trojan://telegram-id-directvpn@13.51.88.4:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#Our Channel : @DirectVPN
+trojan://telegram-id-privatevpns@35.181.245.13:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#👉🆔 @v2ray_configs_pool📡🇫🇷France
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@51.21.143.7:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#Telegram @VlessConfig 🇸🇪
+vless://651d818e-4d5c-4180-a295-1db7a8fabc71@151.101.128.155:80?security=&type=ws&path=/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed%3D2048&host=Berim3arekar.net&encryption=none#👉🆔 @v2ray_configs_pool📡🇨🇦Canada
+trojan://telegram-id-privatevpns@13.61.55.48:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#(S101)🇸🇪t.me/PrivateVPNs
+vless://651d818e-4d5c-4180-a295-1db7a8fabc71@151.101.128.155:80?security=&type=ws&path=/telegram-NUFiLTER#👉🆔 @v2ray_configs_pool📡🇨🇦Canada
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.188:8080#👉🆔 @v2ray_configs_pool📡🇺🇸United States
