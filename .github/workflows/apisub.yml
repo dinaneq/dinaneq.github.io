@@ -1,7 +1,7 @@
-name: Kirim ke ApiSub
+name: Kirim ke ApiKu.py
 on:
   schedule:
-    - cron: '0 */23 * * *'
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,4 +24,4 @@ jobs:
           
       - name: Run Python script
         run: |
-          python apisub.py  # Replace with your script's path
+          python apiku.py  # Replace with your script's path
