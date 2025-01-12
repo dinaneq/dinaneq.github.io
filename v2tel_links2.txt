@@ -1386,3 +1386,11 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@154.90.37.139:990#[🏁]t.me/ConfigsHub
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@103.243.215.17:990#[🏁]t.me/ConfigsHub
 vless://Parsashonam-146@Zmaoz.Faculty.Ucdavis.Edu:443?path=%2F%40Parsashonam%2Fws%3Fed%3D2560&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=ParsashonamVPN.ir&fp=firefox&type=ws&sni=Zmaoz.Faculty.Ucdavis.Edu.#[🇬🇧]t.me/ConfigsHub
+vless://d603cba7-4ec4-4744-a1df-1fcbec323066@172.67.204.84:2083?security=tls&sni=gErmaNHP.Pages.dEv&type=ws&host=germanhp.pages.dev&path=%2FsmTmVvYcksJTignq%2FMy4xMjYuMTU5LjEy&fp=randomized&alpn=http/1.1#[🇨🇦]t.me/ConfigsHub
+vless://83312918-9077-4ab5-95df-2974ff77e7aa@51.178.61.127:2087?security=reality&sni=sourceforge.net&type=tcp&fp=chrome&pbk=p7D1-djJiLWoHcOpkhwz1BqAxoN6OwTwfFFDAzp9nBs&sid=d1d37795627fd805#[🇫🇷]t.me/ConfigsHub
+vless://Joinin--ZEDMODEON@zmaoz.faculty.ucdavis.edu:443?path=%2F%40ZEDMODEON-ZEDMODEON-ZEDMODEON%40ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-%40ZEDMODEON%3Fed%3D2048&security=tls&encryption=none&host=niopdc.ir&type=ws&sni=zmaoz.faculty.ucdavis.edu#⚜️Telegram:@IP_CF
+trojan://SSorg@206.238.236.134:443?allowInsecure=0&sni=sstjj.esslh.filegear-sg.me&ws=1&wspath=%2F#[🏁]t.me/ConfigsHub
+vless://5c0c010c-783c-439b-9303-ed384e3478a5@152.228.214.249:2053?security=none&type=tcp&host=fast.com&path=%2F&headerType=http#[🇫🇷]t.me/ConfigsHub
+vmess://eyJhZGQiOiIxODguMjQ1LjIxMS4xMzciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNjQwZWE4OGItOGU1MC00ZTZlLThiYzMtOWY1MDk3YzYxN2RkIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9kYT9lZD0yNTYwIiwicG9ydCI6IjgwODAiLCJwcyI6Ilx1MjY5Y1x1ZmUwZlRlbGVncmFtOkBJUF9DRiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==
+vless://f822a992-3b1f-4e2e-b7bf-46874f376dcc@138.124.53.161:443?security=tls&sni=ad2.transitkala.com&type=ws&host=ad2.transitkala.com&path=%2F&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1#[🇩🇪]t.me/ConfigsHub
+vless://e9ef791a-98fc-4e89-9a7d-8bec68bce5a8@151.101.130.133:80?type=ws&host=jetservices55.ir&path=%2F%3Fed%3D2560#[🇺🇸]t.me/ConfigsHub
