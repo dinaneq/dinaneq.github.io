@@ -11,11 +11,7 @@ def main():
     file_paths = (
         "semua.txt",
         "aktif.txt",    
-        "vmess",    
-        "ss.txt",
-        "tr.txt",    
-        "vl.txt",
-        "vm.txt",       
+        "vmess",           
     )
     # From 2 to 10 items in one media group
     # https://core.telegram.org/bots/api#sendmediagroup
