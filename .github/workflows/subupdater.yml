@@ -33,7 +33,10 @@ jobs:
           curl -o merge24.txt -LJO "https://github.com/9Knight9n/v2ray-aggregator/raw/main/merged_24h.txt"      
           curl -o singbox.json -LJO "https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/singbox.json"      
           curl -o nekobox.txt -LJO "https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt"
-          
+          curl -o vm.txt https://github.com/sevcator/5ubscrpt10n/raw/refs/heads/main/protocols/vm.txt
+          curl -o vl.txt https://github.com/sevcator/5ubscrpt10n/raw/refs/heads/main/protocols/vl.txt
+          curl -o ss.txt https://github.com/sevcator/5ubscrpt10n/raw/refs/heads/main/protocols/ss.txt
+          curl -o tr.txt https://github.com/sevcator/5ubscrpt10n/raw/refs/heads/main/protocols/tr.txt
       - name: Push And Update Files
         run: |
           git config --global user.name "dinaneq"
