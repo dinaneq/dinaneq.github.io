@@ -24,4 +24,4 @@ jobs:
           
       - name: Run Python script
         run: |
-          python apiku.py  # Replace with your script's path
+          python apiku.py && python apiku2.py # Replace with your script's path
