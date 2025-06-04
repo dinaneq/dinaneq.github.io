@@ -3,7 +3,7 @@ import datetime
 import pytz
 
 BOT_TOKEN = "7260168327:AAEEOvNziECXLf29xfIU9rsr9JqIcmOFR_g"
-CHAT_ID = -1001786965873
+CHAT_ID = -1002292042831
 current_time = datetime.datetime.now(pytz.timezone('Asia/Jakarta'))
 
 def main():
