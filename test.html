@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KuyShare - V2Ray</title>
+<link rel="icon" href="https://raw.githubusercontent.com/AFRcloud/BG/main/icons8-film-noir-80.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #10b981;
+    --dark: #0f172a;
+    --dark-light: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --gray-light: #94a3b8;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    min-height: 100vh;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.input {
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    color: var(--light);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.input[readonly] {
+    background: rgba(51, 65, 85, 0.3);
+}
+
+.select {
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    color: var(--light);
+    border-radius: 8px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394a3b8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+}
+
+.select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-secondary {
+    background: rgba(51, 65, 85, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    color: var(--light);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(71, 85, 105, 0.6);
+}
+
+.tab {
+    position: relative;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    color: var(--gray-light);
+}
+
+.tab.active {
+    color: var(--primary);
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.code {
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    font-family: 'Courier New', monospace;
+    border-radius: 8px;
+}
+
+.loading-spinner {
+    border: 3px solid rgba(51, 65, 85, 0.3);
+    border-top: 3px solid var(--primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-spinner-sm {
+    border: 2px solid rgba(51, 65, 85, 0.3);
+    border-top: 2px solid var(--primary);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.proxy-card {
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 10px;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    transition: all 0.2s ease;
+}
+
+.proxy-card:hover {
+    background: rgba(51, 65, 85, 0.4);
+    border-color: rgba(99, 102, 241, 0.2);
+    transform: translateY(-2px);
+}
+
+.pagination-btn {
+    min-width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.pagination-btn.active {
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.pagination-btn:not(.active):not(.disabled):hover {
+    background: rgba(71, 85, 105, 0.4);
+}
+
+.pagination-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.qrcode-container {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qrcode-container img, 
+.qrcode-container canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wildcard-container {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: rgba(15, 23, 42, 0.3);
+}
+
+.wildcard-container.show {
+    display: block;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    accent-color: var(--primary);
+}
+
+.checkbox-container label {
+    font-size: 0.875rem;
+    color: var(--gray-light);
+}
+
+.status-active {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.status-dead {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.status-unknown {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+@media (max-width: 640px) {
+    .proxy-card .flex {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    
+    .proxy-card .flex > div:first-child {
+        flex: 1;
+        min-width: 0;
+        margin-bottom: 0 !important;
+        padding-right: 8px;
+    }
+    
+    .proxy-card .font-medium {
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+    
+    .proxy-card .text-xs {
+        font-size: 0.65rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .create-account-btn {
+        padding: 0.375rem 0.5rem !important;
+        font-size: 0.65rem !important;
+        min-width: 60px !important;
+        width: auto !important;
+    }
+}
+
+.header {
+    border-radius: 12px 12px 0 0;
+    padding: 1.5rem 0;
+    background: linear-gradient(to right, rgba(79, 70, 229, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
+}
+
+.footer {
+    background: rgba(15, 23, 42, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.donation-btn {
+    background: var(--primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.donation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: linear-gradient(to bottom, #1e293b, #0f172a);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 12px;
+}
+</style>
+</head>
+<body class="font-sans">
+<div class="container mx-auto px-2 sm:px-4 py-4 sm:py-6 max-w-xl">
+    <div class="card overflow-hidden">
+        <div class="header">
+            <div class="flex items-center justify-center">
+                <div class="mr-3">
+                    <i class="fas fa-network-wired text-4xl text-indigo-400"></i>
+                </div>
+                <h1 class="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">KuyShare - V2Ray</h1>
+            </div>
+        </div>
+        
+        <div class="p-6">
+            <div id="proxy-list-section">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5">
+                    <div class="flex items-center mb-3 sm:mb-0">
+                        <i class="fas fa-server mr-2 text-indigo-400"></i>
+                        <h2 class="text-xl font-semibold">Proxy List</h2>
+                    </div>
+                    <div class="flex flex-col sm:flex-row w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-3">
+                        <button id="refresh-btn" class="btn-primary py-2 px-4 rounded-lg flex items-center justify-center text-sm">
+                            <i class="fas fa-sync-alt mr-2"></i>Refresh
+                        </button>
+                        <button id="custom-url-btn" class="btn-secondary py-2 px-4 rounded-lg flex items-center justify-center text-sm">
+                            <i class="fas fa-link mr-2"></i>URL
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="custom-url-input" class="mb-5 hidden">
+                    <div class="flex">
+                        <input type="text" id="proxy-url" class="flex-1 px-4 py-2.5 input rounded-l-lg text-sm" 
+                            placeholder="Enter custom proxy list URL" 
+                            value="https://proxy.kuyshare.eu.org/active.txt">
+                        <button id="load-custom-url" class="btn-primary px-4 py-2.5 rounded-r-lg">
+                            Load
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="loading-indicator" class="text-center py-10 hidden">
+                    <div class="loading-spinner mx-auto mb-4"></div>
+                    <p class="text-indigo-300 text-sm">Loading proxy list...</p>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="relative">
+                        <input type="text" id="search-input" class="w-full pl-10 pr-4 py-2.5 input rounded-lg text-sm" placeholder="Search by provider or country...">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <i class="fas fa-search text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="proxy-list-container" class="mt-4">
+                    </div>
+                
+                <div id="pagination-container" class="flex justify-center items-center mt-6 space-x-2">
+                    </div>
+
+                <div id="proxy-count-info" class="text-center mt-3 text-sm text-gray-400">
+                    </div>
+                
+                <div id="no-proxies-message" class="text-center py-10 hidden">
+                    <i class="fas fa-exclamation-circle text-rose-400 text-4xl mb-3"></i>
+                    <p class="text-gray-300 text-sm">No proxies found. Please refresh or try a different URL.</p>
+                </div>
+            </div>
+            
+            <div id="account-creation-section" class="mt-6 hidden">
+                <div class="pt-4">
+                    <div class="divider mb-6"></div>
+                    <div class="flex justify-between items-center mb-5">
+                        <div class="flex items-center">
+                            <i class="fas fa-user-plus mr-2 text-indigo-400"></i>
+                            <h2 class="text-xl font-semibold">Create Account</h2>
+                        </div>
+                        <button id="back-to-list" class="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm">
+                            <i class="fas fa-arrow-left mr-2"></i> Back to List
+                        </button>
+                    </div>
+                    
+                    <div class="card p-5 mb-6">
+                        <h3 class="text-base font-medium text-indigo-400 mb-4 flex items-center">
+                            <i class="fas fa-server mr-2"></i>
+                            Selected Proxy
+                        </h3>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="flex items-center space-x-2 bg-slate-800/30 p-3 rounded-lg border border-slate-700/20">
+                                <i class="fas fa-building text-indigo-400/70 w-5 text-center"></i>
+                                <div>
+                                    <div class="text-xs text-gray-400">Provider</div>
+                                    <div id="selected-provider" class="text-sm font-medium text-white">-</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-slate-800/30 p-3 rounded-lg border border-slate-700/20">
+                                <i class="fas fa-globe-americas text-indigo-400/70 w-5 text-center"></i>
+                                <div>
+                                    <div class="text-xs text-gray-400">Country</div>
+                                    <div id="selected-country" class="text-sm font-medium text-white">-</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-slate-800/30 p-3 rounded-lg border border-slate-700/20">
+                                <i class="fas fa-network-wired text-indigo-400/70 w-5 text-center"></i>
+                                <div>
+                                    <div class="text-xs text-gray-400">IP</div>
+                                    <div id="selected-ip" class="text-sm font-medium text-white">-</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-slate-800/30 p-3 rounded-lg border border-slate-700/20">
+                                <i class="fas fa-plug text-indigo-400/70 w-5 text-center"></i>
+                                <div>
+                                    <div class="text-xs text-gray-400">Port</div>
+                                    <div id="selected-port" class="text-sm font-medium text-white">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="proxy-status-container" class="hidden">
+                            <div id="proxy-status-active" class="hidden rounded-lg p-3 status-active">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center mr-3 border border-emerald-500/20">
+                                        <i class="fas fa-check text-emerald-400"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-emerald-400">ACTIVE</div>
+                                        <div class="text-xs text-gray-400">Latency: <span id="proxy-latency" class="text-amber-400">0ms</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="proxy-status-dead" class="hidden rounded-lg p-3 status-dead">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-rose-500/10 flex items-center justify-center mr-3 border border-rose-500/20">
+                                        <i class="fas fa-times text-rose-500"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-rose-500">DEAD</div>
+                                        <div class="text-xs text-gray-400">This proxy may not be working</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="proxy-status-unknown" class="hidden rounded-lg p-3 status-unknown">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center mr-3 border border-amber-500/20">
+                                        <i class="fas fa-question text-amber-400"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-amber-400">UNKNOWN</div>
+                                        <div class="text-xs text-gray-400">Could not check proxy status</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="proxy-status-loading" class="rounded-lg p-3 bg-indigo-900/10 border border-indigo-500/20">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-indigo-500/10 flex items-center justify-center mr-3 border border-indigo-500/20">
+                                        <div class="loading-spinner-sm"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-indigo-400">CHECKING</div>
+                                        <div class="text-xs text-gray-400">Verifying proxy status...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex border-b border-gray-700 mb-6 overflow-x-auto space-x-1 sm:space-x-0">
+                        <button class="tab active py-3 px-4 font-medium text-sm focus:outline-none" data-target="vless-form">
+                            <i class="fas fa-bolt mr-2"></i>VLESS
+                        </button>
+                        <button class="tab py-3 px-4 font-medium text-sm focus:outline-none" data-target="trojan-form">
+                            <i class="fas fa-user-secret mr-2"></i>Trojan
+                        </button>
+                        <button class="tab py-3 px-4 font-medium text-sm focus:outline-none" data-target="ss-form">
+                            <i class="fas fa-mask mr-2"></i>SS
+                        </button>
+                    </div>
+                    
+                    
+                    <div id="vless-form" class="protocol-form">
+                        <form id="vless-account-form" class="space-y-5">
+                            <div>
+                                <label for="vless-name" class="block text-sm font-medium text-gray-300 mb-2">Account Name</label>
+                                <input type="text" id="vless-name" name="name" class="w-full px-4 py-2.5 input rounded-lg text-sm" readonly>
+                            </div>
+                            
+                            <div>
+                                <label for="vless-uuid" class="block text-sm font-medium text-gray-300 mb-2">UUID</label>
+                                <div class="flex">
+                                    <input type="text" id="vless-uuid" name="uuid" class="flex-1 px-4 py-2.5 input rounded-l-lg text-sm" value="00000000-0000-0000-0000-000000000000" required>
+                                    <button type="button" onclick="generateUUID('vless-uuid')" class="btn-secondary px-4 py-2.5 rounded-r-lg hover:bg-slate-700">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="vless-path" class="block text-sm font-medium text-gray-300 mb-2">Path</label>
+                                <input type="text" id="vless-path" name="path" class="w-full px-4 py-2.5 input rounded-lg text-sm" readonly>
+                            </div>
+                            
+                            <div>
+                                <label for="vless-security" class="block text-sm font-medium text-gray-300 mb-2">TLS</label>
+                                <select id="vless-security" name="security" class="w-full px-4 py-2.5 select rounded-lg text-sm">
+                                    <option value="tls">TLS</option>
+                                    <option value="none">None</option>
+                                </select>
+                                <input type="hidden" id
