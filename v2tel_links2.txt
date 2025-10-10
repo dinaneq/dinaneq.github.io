@@ -47929,3 +47929,9 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@94.131.14.28:8880?mode=gun&security
 vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@13.36.187.193:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#@VlessConfig 🇨🇵
 trojan://telegram-id-directvpn@15.236.170.222:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel : @DirectVPN
 vless://f65e636d-c532-4e6c-b428-015402fd276c@m22a.vip784.com:33801?security=none&encryption=none&host=varzesh3.ir%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=http&type=tcp#[🏁]t.me/ConfigsHub
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@52.47.97.33:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#@VlessConfig 🇨🇵
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@35.181.124.105:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#@VlessConfig 🇨🇵
+trojan://telegram-id-directvpn@52.47.97.33:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel : @DirectVPN
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638949521662009295.budapest-prx-dnraacr.info:8880?mode=gun&security=&encryption=none&authority=%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&type=grpc#[🇫🇷]t.me/ConfigsHub
+trojan://telegram-id-directvpn@35.181.124.105:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel : @DirectVPN
+vless://TELEGRAM-CONFiGLiNE-byA@configline.fast.hosting-ip.com:80?mode=auto&path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D2048&security=none&encryption=none&host=configlinechannel.com&type=xhttp#%5B%F0%9F%87%A9%F0%9F%87%AA%5D%40configLINE
