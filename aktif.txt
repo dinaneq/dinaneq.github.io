@@ -15,4 +15,4 @@ vless://f929cc78-e2a1-4ce3-8051-3e9538405144@104.18.189.112:80/?type=ws&encrypti
 vless://6bf2c61f-db69-4e00-9dc5-249b83e69d73@srvfree.iranai.space:41314?security=&encryption=none&host=V2RRVIP&headerType=http&type=tcp#[🇮🇷]t.me/ConfigsHub```
 vless://6a630a53-3e97-43c1-8240-4c82db7a8512@193.151.134.247:16935?type=ws&encryption=none&path=%2F&host=&security=none#[🇮🇷]t.me/ConfigsHub```
 vless://d7df1e4e-ce6a-4676-b655-2f906b96a854@193.151.134.247:16935?type=ws&encryption=none&path=%2F&host=&security=none#[🇮🇷]t.me/ConfigsHub```
-vless://d7884c33-1284-4506-bd93-7c38ec311d61@193.151.134.247:16935?type=ws&encryption=none&path=%2F&host=&security=none#[🇮🇷]t.me/ConfigsHub```
+vless://d7884c33-1284-4506-bd93-7c38ec311d61@193.151.134.247:16935?type=ws&encryption=none&path=%2F&host=&security=none#[🇮🇷]t.me/ConfigsHub```vless://a1d9eaf5-9e03-4c67-af0b-e238b865b373@185.143.234.122:80?encryption=none&security=none&type=ws&host=amm4.avenflow.ir&path=%2F#[🇮🇷]t.me/ConfigsHub```
