@@ -15,4 +15,4 @@ vless://fb9d26d5-04f6-4d61-9f17-8288a420e25c@37.152.189.74:4431?security=none&al
 vless://0f9e7891-e129-4b1c-883b-c2b5f3aab45a@37.152.189.74:4431?path=%2Fek%2Firinn%2Flive%2F1080p%2F&security=none&encryption=none&host=live-azd1102.telewebion.ir&type=ws#[🇮🇷]t.me/ConfigsHub```
 vless://932e409d-f95f-4d9f-9370-13241852ed53@alinka.satarv.ir:80?type=ws&encryption=none&path=%2F&host=&security=none#[🇮🇷]t.me/ConfigsHub```
 vless://3b861b6e-e348-418a-8884-90be9f95355b@185.143.234.235:80?security=&encryption=none&host=vixon.portab.org&type=ws#[🇮🇷]t.me/ConfigsHub```
-vless://a6fde86f-5cd2-4c5c-9910-ed6cc85f9033@linkirani.com:10689?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=linkirani.com&fp=chrome&type=ws&allowInsecure=0#[🇮🇷]t.me/ConfigsHub```
+vless://a6fde86f-5cd2-4c5c-9910-ed6cc85f9033@linkirani.com:10689?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=linkirani.com&fp=chrome&type=ws&allowInsecure=0#[🇮🇷]t.me/ConfigsHub```vless://8fc836e4-f72f-40d7-8a55-8677324a2079@185.143.234.122:80?path=%2F&security=none&encryption=none&host=S4.koremusic.ir&type=ws#[🇮🇷]t.me/ConfigsHub```
