@@ -1,9 +1,2 @@
-vless://459cc637-cbc8-45cd-8bea-6b194256b3ac@185.143.233.200:80?path=%2F%3Fed%3D2080&security=none&encryption=none&host=final.idbede.ir&type=ws#[🇮🇷]t.me/ConfigsHub```
-vless://d827c24a-4c56-4e8e-81c1-8eb5258c1a9d@verso.legion-bot.site:443?path=%2Fvl%2F&security=tls&alpn=http%2F1.1&encryption=none&host=verso.legion-bot.site&type=ws&sni=verso.legion-bot.site#[🇮🇷]t.me/ConfigsHub```
-vless://09932107-63d7-4649-ace6-da42ca4e1a1c@185.143.233.235:80?type=ws&host=vixon.portab.org#[🇮🇷]t.me/ConfigsHub```
-vless://a13dadbe-0938-4537-8b5e-7e9fcdb2e30e@185.143.234.5:443?encryption=none&headerType=none&allowInsecure=0&type=ws&mux=true&security=tls&sni=alef.ir.oadeflantrogm.iranaircdn.com&fp=randomized&path=%2F%3Fed%3D443&host=alef.ir.oadeflantrogm.iranaircdn.com#@icv2ray
-vless://dfc018ee-339a-4150-a3e2-a6caaaeec1e9@185.143.233.200:443?encryption=none&headerType=none&allowInsecure=0&type=ws&mux=true&security=tls&sni=alef.ir.oadeflantrogm.abrmahanair.com&fp=randomized&path=%2F%3Fed%3D443&host=alef.ir.oadeflantrogm.abrmahanair.com#@icv2ray
-vless://cff6f361-828a-43c8-a8b5-8d10b32e57fb@188.114.98.0:443?path=%2F&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=zh.hollowspot.ir&type=ws&allowInsecure=0&sni=zh.hollowspot.ir#[🇨🇦]t.me/ConfigsHub```
-vless://85b91d4b-38d2-49e9-b405-e7ca373003e1@snapp.ir:80?security=none&type=ws&headerType=&path=%2F&host=ir2tel.lowping4.ir#[🇮🇷]t.me/ConfigsHub```
 vless://85b91d4b-38d2-49e9-b405-e7ca373003e1@185.143.234.122:80?security=none&type=ws&headerType=&path=%2F&host=ir2tel.lowping4.ir#[🇮🇷]t.me/ConfigsHub```
-vless://8a30cf48-9fa2-46c5-8815-2822b12852e0@8.35.211.177:8443?allowInsecure=1&encryption=none&host=xqkxw.ccwu.cc&security=tls&sni=xqkxw.ccwu.cc&type=ws#[🏁]t.me/ConfigsHub```
+vless://8a30cf48-9fa2-46c5-8815-2822b12852e0@8.35.211.177:8443?allowInsecure=1&encryption=none&host=xqkxw.ccwu.cc&security=tls&sni=xqkxw.ccwu.cc&type=ws#[🏁]t.me/ConfigsHub```vless://8a30cf48-9fa2-46c5-8815-2822b12852e0@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=1&host=xqkxw.ccwu.cc&type=ws&allowInsecure=1&sni=xqkxw.ccwu.cc#[🇨🇦]t.me/ConfigsHub```
