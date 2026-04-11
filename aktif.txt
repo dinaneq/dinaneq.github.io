@@ -1,1 +1,2 @@
-vless://b23f471d-5f6b-4593-99fe-1535341c9789@185.143.234.235:80?security=none&encryption=none&host=vixon.portab.org&type=ws#[🇮🇷]t.me/ConfigsHub```
+vless://7337515a-7074-4eb1-9fea-e7df5ef91f7a@185.143.234.235:80?flow=&type=ws&host=vixon.portab.org&path=/&security=none#[🇮🇷]t.me/ConfigsHub```
+vless://958f6b9f-1628-4816-b3b6-7cdf4dc8cf03@6kdksjskskwkwodk.lskwposkrjgso.ncniwlqnxbdje.wizardxray.ir:705?security=none&encryption=none&host=rubika.ir,igap.net,splus.ir,skyroom.online/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=http&type=tcp#[🇮🇷]t.me/ConfigsHub```
